@@ -1,5 +1,7 @@
 // import { Component } from "react";
 
+import { Component } from "react";
+
 // import { Component } from "react";
 
 // class ClassComp extends Component{
@@ -88,28 +90,54 @@
 // export default ClassComp;
 
 
-import { Component } from "react";
+// import { Component } from "react";
 
-class ClassComp extends Component {
-    constructor() {
+// class ClassComp extends Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             Bikes: [
+//                 "FZ-X", "Crux", "RX-100", "Kawasaki Ninja H2R",
+//                 "Ducati Superleggera V4",
+//                 "Ducati Panigale V4 R",
+//                 "BMW M 1000 RR",
+//                 "Kawasaki Ninja H2",
+//                 "Suzuki GSX-R1000R",
+//                 "Honda CBR1000RR-R SP",
+//                 "Aprilia RSV4 Factory"
+//             ]
+//         }
+//     }
+//     render() {
+//         return <div>
+//             <ul>
+//                 {Object.values(this.state.Bikes).map((val, i) => { return <li key={i}>{val}</li> })}
+//             </ul>
+//         </div>
+//     }
+// }
+// export default ClassComp;
+
+
+class ClassComp extends Component{
+    constructor(){
         super();
-        this.state = {
-            Bikes: [
-                "FZ-X", "Crux", "RX-100", "Kawasaki Ninja H2R",
-                "Ducati Superleggera V4",
-                "Ducati Panigale V4 R",
-                "BMW M 1000 RR",
-                "Kawasaki Ninja H2",
-                "Suzuki GSX-R1000R",
-                "Honda CBR1000RR-R SP",
-                "Aprilia RSV4 Factory"
+        this.state={
+            Students:[
+                "Pavan",
+                "Dinesh",
+                "Lokesh",
+                "Uday",
+                "Yaswanth",
+                "Lakshimi",
             ]
         }
     }
-    render() {
+    render(){
         return <div>
             <ul>
-                {Object.values(this.state.Bikes).map((val, i) => { return <li key={i}>{val}</li> })}
+                {Object.values(this.state.Students).map((val,i)=>{
+                    return<li key={i}>{val}</li>})}
             </ul>
         </div>
     }
