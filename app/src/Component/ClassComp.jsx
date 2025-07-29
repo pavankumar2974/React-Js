@@ -193,27 +193,55 @@ import { Component } from "react";
 // export default ClassComp;
 
 
+// class ClassComp extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             database:[
+//                 "sql",
+//                 "Mysql",
+//                 "mangodb",
+//                 "dbms",
+//             ]
+//         }
+//     }
+//     render(){
+//         return <div>
+//             <ul>
+//                 {Object.values(this.state.database).map((val,i)=>{
+//                     return<li key={i}>{val}</li>
+//                 })}
+//             </ul>
+//         </div>
+    
+// }
+// }
+// export default ClassComp;
+
+
 class ClassComp extends Component{
     constructor(){
         super();
         this.state={
-            database:[
+            lang:[
+                "c",
+                "c++",
+                "python",
                 "sql",
-                "Mysql",
-                "mangodb",
-                "dbms",
+                "Html",
+                "Css",
+                "Javascript",
+                "React-js"
             ]
         }
+
     }
     render(){
         return <div>
             <ul>
-                {Object.values(this.state.database).map((val,i)=>{
-                    return<li key={i}>{val}</li>
-                })}
+                {Object.values(this.state.lang).map((val,i)=>{return<li key={i}>{val}</li>})}
             </ul>
         </div>
-    
-}
+    }
 }
 export default ClassComp;
