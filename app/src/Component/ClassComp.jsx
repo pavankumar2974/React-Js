@@ -119,25 +119,48 @@ import { Component } from "react";
 // export default ClassComp;
 
 
+// class ClassComp extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             Students:[
+//                 "Pavan",
+//                 "Dinesh",
+//                 "Lokesh",
+//                 "Uday",
+//                 "Yaswanth",
+//                 "Lakshimi",
+//             ]
+//         }
+//     }
+//     render(){
+//         return <div>
+//             <ul>
+//                 {Object.values(this.state.Students).map((val,i)=>{
+//                     return<li key={i}>{val}</li>})}
+//             </ul>
+//         </div>
+//     }
+// }
+// export default ClassComp;
+
 class ClassComp extends Component{
     constructor(){
         super();
         this.state={
-            Students:[
-                "Pavan",
-                "Dinesh",
-                "Lokesh",
-                "Uday",
-                "Yaswanth",
-                "Lakshimi",
+            Courses:[
+                "BCA",
+                "BBA",
+                "BCOM",
+                "BHM",
+                "BSC",
             ]
         }
     }
     render(){
-        return <div>
+        return<div>
             <ul>
-                {Object.values(this.state.Students).map((val,i)=>{
-                    return<li key={i}>{val}</li>})}
+                {Object.values(this.state.Courses).map((val,i)=>{return<li key={i}>{val}</li>})}
             </ul>
         </div>
     }
