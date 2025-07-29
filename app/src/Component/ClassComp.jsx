@@ -144,25 +144,76 @@ import { Component } from "react";
 // }
 // export default ClassComp;
 
+// class ClassComp extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             Courses:[
+//                 "BCA",
+//                 "BBA",
+//                 "BCOM",
+//                 "BHM",
+//                 "BSC",
+//             ]
+//         }
+//     }
+//     render(){
+//         return<div>
+//             <ul>
+//                 {Object.values(this.state.Courses).map((val,i)=>{return<li key={i}>{val}</li>})}
+//             </ul>
+//         </div>
+//     }
+// }
+// export default ClassComp;
+
+
+// class ClassComp extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             plang:[
+//                 "c",
+//                 "c++",
+//                 "python",
+//                 "java",
+//                 "R",
+//             ]
+//         }
+//     }
+//     render(){
+//         return <div>
+//             <ul>
+//                 {Object.values(this.state.plang).map((val,i)=>{return<li key={i}>{val}</li>}
+//                 )}
+//             </ul>
+//         </div>
+//     }
+// }
+// export default ClassComp;
+
+
 class ClassComp extends Component{
     constructor(){
         super();
         this.state={
-            Courses:[
-                "BCA",
-                "BBA",
-                "BCOM",
-                "BHM",
-                "BSC",
+            database:[
+                "sql",
+                "Mysql",
+                "mangodb",
+                "dbms",
             ]
         }
     }
     render(){
-        return<div>
+        return <div>
             <ul>
-                {Object.values(this.state.Courses).map((val,i)=>{return<li key={i}>{val}</li>})}
+                {Object.values(this.state.database).map((val,i)=>{
+                    return<li key={i}>{val}</li>
+                })}
             </ul>
         </div>
-    }
+    
+}
 }
 export default ClassComp;
