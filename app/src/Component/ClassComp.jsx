@@ -213,17 +213,17 @@ import { Component } from "react";
 //                 })}
 //             </ul>
 //         </div>
-    
+
 // }
 // }
 // export default ClassComp;
 
 
-class ClassComp extends Component{
-    constructor(){
+class ClassComp extends Component {
+    constructor() {
         super();
-        this.state={
-            lang:[
+        this.state = {
+            lang: [
                 "c",
                 "c++",
                 "python",
@@ -236,10 +236,10 @@ class ClassComp extends Component{
         }
 
     }
-    render(){
+    render() {
         return <div>
             <ul>
-                {Object.values(this.state.lang).map((val,i)=>{return<li key={i}>{val}</li>})}
+                {Object.values(this.state.lang).map((val, i) => { return <li key={i}>{val}</li> })}
             </ul>
         </div>
     }
