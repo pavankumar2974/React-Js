@@ -34,7 +34,7 @@ class ClassFourComp extends Component {
                 {Object.values(bikes).map((val, i) => { return <li key={i}>{val}</li> })}
             </ul>
             <ul>
-                {Object.values(car).map((val,i)=>{return<li key={i}>{val}</li>})}
+                {Object.values(car).map((val, i) => { return <li key={i}>{val}</li> })}
             </ul>
         </div>
     }
