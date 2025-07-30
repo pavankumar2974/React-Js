@@ -9,6 +9,7 @@ import ClassTwoComp, { ClassThreeComp } from './Component/ClassTwoComp'
 import ClassFourComp from './Component/ClassFourComp'
 import ClassFiveComp from './Component/ClassFiveComp'
 import ClassSixComp from './Component/ClassSixComp'
+import ParentComp from './ComponentCommunication/parentComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +24,8 @@ function App() {
 <ClassThreeComp/> */}
 {/* <ClassFourComp/> */}
 {/* <ClassFiveComp/> */}
-<ClassSixComp/>
+{/* <ClassSixComp/> */}
+<ParentComp/>
       </div>
     </>
   )
