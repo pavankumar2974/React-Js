@@ -6,6 +6,7 @@ import './App.css'
 // import ClassOneComp from './Component/ClassOneComp'
 import ClassObjComp from './Component/ClassObjComp'
 import ClassTwoComp, { ClassThreeComp } from './Component/ClassTwoComp'
+import ClassFourComp from './Component/ClassFourComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +17,9 @@ function App() {
         {/* <ClassComp /> */}
 {/* <ClassOneComp/> */}
 {/* <ClassObjComp/> */}
-<ClassTwoComp/>
-<ClassThreeComp/>
+{/* <ClassTwoComp/>
+<ClassThreeComp/> */}
+<ClassFourComp/>
       </div>
     </>
   )
