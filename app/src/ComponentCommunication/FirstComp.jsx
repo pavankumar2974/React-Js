@@ -14,10 +14,11 @@ export default class FirstComp extends Component{
 
     }
     ChangeMsgInFirst =()=>{
-        this.setState.message
+        this.setState ({message:"message is changed when clicked on button"})
     }
     render(){
         return(<div>
+            <button onClick={this.ChangeMsgInFirst}>Change</button>
             <SecondComp newmessage={this.state.message}/>
         </div>)
     }
