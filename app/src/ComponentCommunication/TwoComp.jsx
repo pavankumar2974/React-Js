@@ -8,8 +8,13 @@ export default class TwoComp extends Component{
         this.state={}
     }
     render(){
+        const {newmessage}=this.props
         return(<div>
-            <h1>{this.props.newmessage}</h1>
+            <ul>{Object.values(newmessage).map((val,i)=>{
+                return <li key={i}>{val}</li>
+            })}
+               
+                </ul>
         </div>)
     }
 }
