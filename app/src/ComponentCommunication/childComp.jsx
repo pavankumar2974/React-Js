@@ -8,7 +8,7 @@ export default class ChildComp extends Component {
     render() {
         return (
             <div>
-                <h2>Welcome Child Component</h2>
+                {/* <h2>Welcome Child Component</h2> */}
                 <h3>{this.props.newMessage}</h3>
             </div>
         );
