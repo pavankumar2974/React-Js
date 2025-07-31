@@ -1,29 +1,28 @@
 import { Component } from "react";
 import ChildComp from "./childComp";
 
-export default class ParentComp extends Component {
-    constructor() {
+
+
+export default class ParentComp extends Component{
+    constructor(){
         super();
-        // This is called the state in parent
-        this.state = {
-            message: "Parent Component text Is Called from Child Component !!",
+        this.state={
+            message:"parent Component text is called from childComponent"
         };
     }
 
-    changeMsgInParent = () => {
+    changeMsgInParent =()=> {
         this.setState({
-            message: "Text Changed in Parent When You clicked the Button",
+            message:"Text is changed when you click the button"
         });
-    };
-
-    render() {
-        return (
+    }
+    render(){
+        return(
             <div>
-                <h2>Parent Component</h2>
-                <button onClick={this.changeMsgInParent}>Change Message</button>
+                <h2>parent component</h2>
+                <button onClick={this.changeMsgInParent}>Change</button>
 
-                <hr />
-                {/* Child component called from Parent Component */}
+
                 <ChildComp newMessage={this.state.message} />
             </div>
         );
