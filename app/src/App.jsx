@@ -11,6 +11,7 @@ import ClassFiveComp from './Component/ClassFiveComp'
 import ClassSixComp from './Component/ClassSixComp'
 import ParentComp from './ComponentCommunication/parentComp'
 import PavanComp from './ComponentCommunication/PavanComp'
+import FirstComp from './ComponentCommunication/FirstComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,7 +28,8 @@ function App() {
 {/* <ClassFiveComp/> */}
 {/* <ClassSixComp/> */}
 {/* <ParentComp/> */}
-<PavanComp/>
+{/* <PavanComp/> */}
+<FirstComp/>
       </div>
     </>
   )
