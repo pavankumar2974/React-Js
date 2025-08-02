@@ -13,7 +13,7 @@ export default class StudentComp extends Component {
     };
   }
 
-  
+
 
   handleChange = (e) => {
     // console.log(e);
