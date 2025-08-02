@@ -13,7 +13,7 @@ class ClassObjComp extends Component {
                 bmilage: "45km",
 
             },
-            bikes:[
+            bikes: [
                 "Fz-x",
                 "Rajdooth",
                 "yezdi",
@@ -26,29 +26,29 @@ class ClassObjComp extends Component {
         }
     }
     render() {
-        const {message,bike,bikes}=this.state
-            
+        const { message, bike, bikes } = this.state
+
         return <div>
             <h1>{message}</h1>
 
             <hr />
-             <ul>
+            <ul>
                 <li>{this.state.bike.bname}</li>
                 <li>{this.state.bike.bprice}</li>
                 <li>{this.state.bike.bmilage}</li>
             </ul>
             <ul>
-                {Object.values(bike).map((val,i)=>{
-                    return<li key={i}>{val}</li>
+                {Object.values(bike).map((val, i) => {
+                    return <li key={i}>{val}</li>
                 })}
             </ul>
-<ul>
-    {bikes.map((val,i)=>{
-        return <li key={i}>{val} </li>
-    })}
-</ul>
+            <ul>
+                {bikes.map((val, i) => {
+                    return <li key={i}>{val} </li>
+                })}
+            </ul>
 
-        </div> 
+        </div>
     }
 
 }
