@@ -13,6 +13,7 @@ import ParentComp from './ComponentCommunication/parentComp'
 import PavanComp from './ComponentCommunication/PavanComp'
 import FirstComp from './ComponentCommunication/FirstComp'
 import OneComp from './ComponentCommunication/OneComp'
+import ToggleButton from './Component/ToggleButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,7 +32,8 @@ function App() {
 {/* <ParentComp/> */}
 {/* <PavanComp/> */}
 {/* <FirstComp/> */}
-<OneComp/>
+{/* <OneComp/> */}
+<ToggleButton/>
       </div>
     </>
   )
