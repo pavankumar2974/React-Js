@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ToggleButton from './Component/ToggleButton'
+import UserClass from './Component/UserClass'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
     <>
       <div>
         <ToggleButton/>
+        {/* <UserClass/> */}
       </div>
     </>
   )
