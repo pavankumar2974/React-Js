@@ -16,7 +16,8 @@ export default class ToggleButton extends Component{
         return(
             <div>
                 <button onClick={this.toggleParagraph}>
-                    {/* {this.state.isvisble === true ? "show" : "Hide"} - Paragraph */}
+                    change 
+                    {this.state.isvisble === true ? "show" : "Hide"} - Paragraph
                     {this.state.isvisble && <p>Welcome to Paragraph !!</p>}
                 </button>
             </div>
