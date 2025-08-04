@@ -32,7 +32,7 @@ export default class ToggleButton extends Component {
         super(props);
 
         this.state = {
-            isVisible: false,
+            isVisible: true,
         };
     }
 
@@ -44,8 +44,8 @@ export default class ToggleButton extends Component {
         return (
             <div>
                 <button onClick={this.toggleParagraph}>
-                    {/* {this.state.isVisible === true ? "show" : "Hide"} - Paragraph */}
-                    {this.state.isVisible ? "Show" : "Hide"} Paragraph
+                    {/* {this.state.isVisible === true ? "show" : "Hide"} - Paragraph
+                    {this.state.isVisible ? "Show" : "Hide"} Paragraph */}
                 </button>
                 {this.state.isVisible && <p>Welcome to Paragraph !!</p>}
             </div>
