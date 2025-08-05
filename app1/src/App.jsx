@@ -14,7 +14,7 @@ function App() {
       <div>
         {/* <ToggleButton/> */}
         {/* <UserClass/> */}
-        <ParentTwo/>
+        <ParentTwo />
       </div>
     </>
   )
