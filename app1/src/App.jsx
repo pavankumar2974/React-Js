@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ToggleButton from './Component/ToggleButton'
 import UserClass from './Component/UserClass'
+import ParentTwo from './Component/ParentTwo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,8 +12,9 @@ function App() {
   return (
     <>
       <div>
-        <ToggleButton/>
+        {/* <ToggleButton/> */}
         {/* <UserClass/> */}
+        <ParentTwo/>
       </div>
     </>
   )
