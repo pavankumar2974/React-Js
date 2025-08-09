@@ -1,6 +1,6 @@
 import { Component } from "react";
 
 
-export default class child extends Component{
-    
+export default class child extends Component {
+
 }
