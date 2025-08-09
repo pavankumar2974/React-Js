@@ -2,25 +2,25 @@ import { Component } from "react";
 
 
 
-export default class parent extends Component{
-    constructor(){
+export default class parent extends Component {
+    constructor() {
         super();
-        this.state={
-            message:"",
+        this.state = {
+            message: "",
         };
     }
 
-    receiveDataFromChild=(msg)=>{
-        console.log("DatamFrom Child",msg);
-        this.setState({message:msg});
-        
+    receiveDataFromChild = (msg) => {
+        console.log("DatamFrom Child", msg);
+        this.setState({ message: msg });
+
     };
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <h2>{this.state.message}</h2>
-                
+
             </div>
         )
     }
