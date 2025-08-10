@@ -1,7 +1,7 @@
 import { Component } from "react";
 import ChildOne from "./ChildOne";
 
-export default class ParentOneComp extends Component {  
+export default class ParentOneComp extends Component {
     constructor() {
         super();
         this.state = {
@@ -10,7 +10,7 @@ export default class ParentOneComp extends Component {
     }
 
     receiveDataFromChild = (msg) => {
-        console.log("Data From Child:", msg); 
+        console.log("Data From Child:", msg);
         this.setState({ message: msg });
     };
 
@@ -18,7 +18,7 @@ export default class ParentOneComp extends Component {
         return (
             <div>
                 <h2>{this.state.message}</h2>
-                <ChildOne getInfo={this.receiveDataFromChild} /> 
+                <ChildOne getInfo={this.receiveDataFromChild} />
             </div>
         );
     }
