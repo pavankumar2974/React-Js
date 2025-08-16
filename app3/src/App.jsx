@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import SiblingComp from './Components/SibilingComp'
 import Sibling from './ComponentComunication/Sibling'
+import UserTable from './Table/UserTable'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <div>
       {/* <SiblingComp /> */}
-      <Sibling />
+      {/* <Sibling /> */}
+      <UserTable/>
     </div>
   )
 }
