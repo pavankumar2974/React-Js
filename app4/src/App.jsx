@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import UserTable from './Components/UserTable'
+import ParentCpmp from './Components/ParentCpmp'
+import ParentComp from './ComponentCommunicatiom/ParentComp'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
   <div>
-    <UserTable/>
+    {/* <UserTable/> */}
+    {/* <ParentCpmp/> */}
+    <ParentComp/>
   </div>
   )
 }
