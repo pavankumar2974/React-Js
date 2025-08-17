@@ -2,17 +2,17 @@ import { Component } from "react";
 import ChildComp from "./ChildComp";
 
 
-export default class ParentComp extends Component{
-    constructor(){
+export default class ParentComp extends Component {
+    constructor() {
         super();
-        this.state={
-            message:"I am a parent state called from child "
+        this.state = {
+            message: "I am a parent state called from child "
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
-<ChildComp newmessage={this.state.message}/>
+                <ChildComp newmessage={this.state.message} />
             </div>
         )
     }
