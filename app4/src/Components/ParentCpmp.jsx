@@ -3,21 +3,21 @@ import ChildComp from "./ChildComp";
 
 
 
-export default class ParentCpmp extends Component{
-    constructor(){
+export default class ParentCpmp extends Component {
+    constructor() {
         super();
-        this.state={
-            message:"Welcome to parentComponent",
+        this.state = {
+            message: "Welcome to parentComponent",
 
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                
-               
-            
-                <ChildComp newmessage={this.state.message}/>
+
+
+
+                <ChildComp newmessage={this.state.message} />
             </div>
         )
     }
