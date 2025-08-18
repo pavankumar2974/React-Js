@@ -1,22 +1,22 @@
 import { Component } from "react";
 
 
-export default class ChildCompOne extends Component{
-    constructor(props){
+export default class ChildCompOne extends Component {
+    constructor(props) {
         super(props);
 
-        this.state={
-            message:"I am Coming from child",
+        this.state = {
+            message: "I am Coming from child",
         };
     }
 
-    sendDataToParent=()=>{
+    sendDataToParent = () => {
         this.props.getInfo(this.state.message);
     };
 
-    render(){
+    render() {
         // console.log(this.props.getInfo)
-        return(
+        return (
             <div>
                 {/* <h1>I am child Component</h1> */}
                 <button onClick={this.sendDataToParent}>Send data to parent</button>
