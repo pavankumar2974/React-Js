@@ -4,15 +4,15 @@ import { Component } from "react";
 import ChildComp from "./ChildComp";
 
 
-export default class ParentComp extends Component{
-    constructor(){
+export default class ParentComp extends Component {
+    constructor() {
         super();
-        this.state={
-            message:"Welcome to parent Component called from child Component ",
+        this.state = {
+            message: "Welcome to parent Component called from child Component ",
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <ChildComp newmessage={this.state.message} />
             </div>
