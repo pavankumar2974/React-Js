@@ -5,6 +5,7 @@ import './App.css'
 import ParentComp from './Components/Parent-child/ParentComp'
 import ParentCompOne from './Components/child-parent/ParentCompOne'
 import Sibling from './Components/SiblingComponent/Sibling'
+import SiblingComp from './Components/SiblingComponent/SiblingComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <div>
       {/* <ParentComp/> */}
       {/* <ParentCompOne/> */}
-      <Sibling />
+      {/* <Sibling /> */}
+      <SiblingComp/>
     </div>
   )
 }
