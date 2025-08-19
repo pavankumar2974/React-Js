@@ -14,19 +14,18 @@ export default class Sibling extends Component{
 
     }
 
-    // msgchangFunc=()=>{
-    //     this.setState({CommonMessage:"I got changed from A"})
-    // }
+    msgchangFunc=()=>{
+        this.setState({CommonMessage:"I got changed from A"})
+    }
 
     
     render(){
         return(
             <div>
-            <AComp />   
+            <AComp changeMsgComp={this.msgchangFunc} />   
             <hr/> 
-            <BComp />
+            <BComp  msg={this.state.CommonMessage}/>
             <hr/>
-            <h1>I am from sibling component</h1>
             </div>
         )
     }
