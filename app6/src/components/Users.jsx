@@ -9,6 +9,8 @@ const Users = () => {
         phone: "",
     })
 
+    const [Users , setUsers]=useState([])
+
     const handleChange = (e) => {
         const {name, value} = e.target
 
@@ -19,7 +21,8 @@ const Users = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault
-        console.log(user)
+        setUsers((prev) => [...prev. user])
+        console.log(Users)
     }
 
     return (
