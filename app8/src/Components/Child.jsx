@@ -6,14 +6,14 @@ export default class Child extends Component {
         super(props);
         this.state = { message: "I am called from parent " }
     }
-        sendDataToParent = () => {
-            this.props.getInfo(this.state.message)
-        }
-    
-    
+    sendDataToParent = () => {
+        this.props.getInfo(this.state.message)
+    }
+
+
     render() {
         console.log(this.props.getInfo)
-        return(
+        return (
             <div>
 
                 <h1>Child Component</h1>
@@ -21,5 +21,5 @@ export default class Child extends Component {
             </div>
         )
 
-}
+    }
 }
