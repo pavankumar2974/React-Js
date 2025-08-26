@@ -6,18 +6,21 @@ import BComp from "./BComp";
 
 
 export default class Sibling extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            message: "Hi  iam from sibling component"
+           Commonmessage: "Hi  iam from sibling component"
         }
     }
 
+    Msgchangefunc=()=>{
+    this.setState({Commonmessage:"I am changeded fro Acomp"})
+    }
     render() {
         return (<div>
-            <h1>{this.state.message}</h1>
-            <AComp />
-            <BComp />
+            <BComp Msg= {this.state.Commonmessage} />
+            <AComp changeMsgComp={this.Msgchangefunc} />
+            
         </div>)
     }
 }
