@@ -6,6 +6,7 @@ export default class BComp extends Component {
         return (
             <div>
                 <h1>I am from BComp</h1>
+                <p>{this.props.Msg}</p>
             </div>
         )
     }
