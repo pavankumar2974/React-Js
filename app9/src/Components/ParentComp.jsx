@@ -3,18 +3,18 @@ import ChildComp from "./ChildComp";
 
 
 
-export default class ParentComp extends Component{
-    constructor(){
+export default class ParentComp extends Component {
+    constructor() {
         super();
-        this.state={
-            message:""
+        this.state = {
+            message: ""
         }
     }
-    receiveDataFromChild=(Msg)=>{
-        this.setState({message:Msg})
+    receiveDataFromChild = (Msg) => {
+        this.setState({ message: Msg })
     }
-    render(){
-        return(<div>
+    render() {
+        return (<div>
             <h2>{this.state.message}</h2>
             <ChildComp getInfo={this.receiveDataFromChild} />
         </div>)
