@@ -13,7 +13,7 @@ function App() {
       <div>
         {/* <Parent /> */}
         <ParentComp />
-       </div>
+      </div>
     </>
   )
 }
