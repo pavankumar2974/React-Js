@@ -11,9 +11,9 @@ function App() {
 
   return (
   <div>
-    {/* <UserTable/> */}
+    <UserTable/>
     {/* <ParentCpmp/> */}
-    <ParentComp/>
+    {/* <ParentComp/> */}
   </div>
   )
 }
