@@ -5,6 +5,7 @@ import './App.css'
 import Parent from './Components/Parent'
 import ParentComp from './Components/ParentComp'
 import UserTable from './Components/UserTable'
+import Crud from './Component-Crud/Crud'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function App() {
       <div>
         {/* <Parent /> */}
         {/* <ParentComp /> */}
-        <UserTable />
+        {/* <UserTable/> */}
+        <Crud />
       </div>
     </>
   )
