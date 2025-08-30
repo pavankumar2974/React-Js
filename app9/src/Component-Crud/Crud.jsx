@@ -1,21 +1,21 @@
 import { Component } from "react";
 
 
-export default class Crud extends Component{
+export default class Crud extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <form>
                     <label htmlFor="Name">Enter Name:</label>
-                    <input type="text" name="Name"value={Name}onChange={this.handleChange} />
-                    <br/>
+                    <input type="text" name="Name" value={Name} onChange={this.handleChange} />
+                    <br />
                     <label htmlFor="email">Enter Email:</label>
-                    <input type="email" name="email" value={email}onChange={this.handlechange}/>
-                    <br/>
+                    <input type="email" name="email" value={email} onChange={this.handlechange} />
+                    <br />
                     <label htmlFor="age">Enter Age:</label>
-                    <input type="number" name="age" value={age}onChange={this.handleChange} />
-                    <br/>
+                    <input type="number" name="age" value={age} onChange={this.handleChange} />
+                    <br />
 
                 </form>
             </div>
