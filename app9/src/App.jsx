@@ -16,7 +16,8 @@ function App() {
         {/* <Parent /> */}
         {/* <ParentComp /> */}
         {/* <UserTable/> */}
-        <Crud />
+       <Crud />
+        
       </div>
     </>
   )
