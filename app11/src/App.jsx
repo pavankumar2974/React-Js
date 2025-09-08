@@ -14,8 +14,8 @@ function App() {
     <>
       <div>
         {/* <Crud /> */}
-  <CrudOne />
- </div>
+        <CrudOne />
+      </div>
     </>
   )
 }
