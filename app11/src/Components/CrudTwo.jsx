@@ -8,7 +8,17 @@ export default class CrudTwo extends Component {
     },
     users: [],
     editIndex: null,
-    isValied: true, 
+    isValied: false, // default false so submit is disabled until input is valid
+  };
+
+  checkValidation = () => {
+    let checkform = true;
+    for (let a in this.state.user) {
+      if (this.state.user[a] === "") {
+        checkform = false;
+      }
+    }
+    this.setState({ isValied: checkform });
   };
 
   handleChange = (e) => {
@@ -16,7 +26,8 @@ export default class CrudTwo extends Component {
     const userEnteredValue = e.target.value;
     const newUser = { ...this.state.user };
     newUser[inputName] = userEnteredValue;
-    this.setState({ user: newUser });
+    this.setState({ user: newUser }, this.checkValidation); 
+    // validate immediately after updating
   };
 
   handleSubmit = () => {
@@ -32,16 +43,16 @@ export default class CrudTwo extends Component {
       Name: "",
       ID: "",
     };
-    this.setState({ user: resetUser });
+    this.setState({ user: resetUser, isValied: false }); // reset validation too
   };
 
   handleEdit = (usr, i) => {
-    this.setState({ user: usr, editIndex: i });
+    this.setState({ user: usr, editIndex: i }, this.checkValidation);
   };
 
   handleDelete = (usr) => {
     const newUsers = this.state.users.filter((del) => {
-      return del.ID !== usr.ID; 
+      return del.ID !== usr.ID;
     });
     this.setState({ users: newUsers });
   };
