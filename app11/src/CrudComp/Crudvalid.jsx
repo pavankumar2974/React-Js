@@ -23,7 +23,7 @@ export default class Crudvalid extends Component {
   handleSubmit = () => {
     const newUsers = [...this.state.users];
     newUsers.push(this.state.user);
-    this.setState({ users: newUsers }); // ✅ fixed: was {user:newUsers}
+    this.setState({ users: newUsers }); 
     this.handleReset();
   };
 
@@ -40,7 +40,7 @@ export default class Crudvalid extends Component {
     this.setState({ user: usr, editIndex: i });
   };
 
-  handleDelete = (usr) => {  // ✅ fixed: was handleDelte
+  handleDelete = (usr) => {  
     const newUsers = this.state.users.filter((del) => {
       return del.email !== usr.email;
     });
@@ -87,13 +87,13 @@ export default class Crudvalid extends Component {
           {this.state.editIndex === null ? (
             <input
               type="button"
-              value="Submit"            // ✅ fixed: was {submit} (undefined)
+              value="Submit"           
               onClick={this.handleSubmit}
             />
           ) : (
             <input
               type="button"
-              value="Update"            // ✅ fixed: was {Update} (undefined)
+              value="Update"            
               onClick={this.handleUpdate}
             />
           )}
