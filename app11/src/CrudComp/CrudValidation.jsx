@@ -9,14 +9,29 @@ export default class CrudValidation extends Component {
     },
     users: [],
     editIndex: null,
+    isValied:false,
   };
 
+  checkValidation=()=>{
+    console.log("Check");
+    var checkform=true;
+    for (let a in this.state.user){
+        if(this.state.user[a]===""){
+            checkform=false;
+        }
+    }
+    if(checkform===true){
+        this.setState({isValied:true});
+    }else{
+        this.setState({isValied:false});
+    }
+  };
   handleChange = (e) => {
     const inputName = e.target.name;
     const userEnteredValue = e.target.value;
     const newuser = { ...this.state.user };
     newuser[inputName] = userEnteredValue;
-    this.setState({ user: newuser });
+    this.setState({ user: newuser } ,this.checkValidation);
   };
 
   handleSubmit = () => {
@@ -41,7 +56,7 @@ export default class CrudValidation extends Component {
 
   handleDelete = (usr) => {
     const newUsers = this.state.users.filter((del) => del.email !== usr.email);
-    this.setState({ users: newUsers }); // ✅ fixed: was {user:newUsers}
+    this.setState({ users: newUsers }); 
   };
 
   handleUpdate = () => {
@@ -85,7 +100,7 @@ export default class CrudValidation extends Component {
           <br />
 
           {this.state.editIndex === null ? (
-            <input type="button" value="Submit" onClick={this.handleSubmit} />
+            <input type="button" value="Submit" onClick={this.handleSubmit}  disabled={!this.state.isValied}/>
           ) : (
             <input type="button" value="Update" onClick={this.handleUpdate} />
           )}
