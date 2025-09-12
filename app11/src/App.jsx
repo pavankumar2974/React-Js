@@ -7,6 +7,7 @@ import CrudValidation from './Components/CrudValidation'
 
 import CrudOne from './Components/CrudOne'
 import CrudTwo from './Components/CrudTwo'
+import CrudThree from './CrudComp/CrudThree'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
       <div>
         {/* <Crud /> */}
         {/* <CrudOne /> */}
-     <CrudTwo />
+     {/* <CrudTwo /> */}
+   <CrudThree />
       </div>
     </>
   )
