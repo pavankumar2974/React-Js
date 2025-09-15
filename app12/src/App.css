@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,33 +44,38 @@
   color: #888;
 }
 
-body{
-  font-family: arial,sans-serif;
+body {
+  font-family: arial, sans-serif;
   background: white;
   margin: 0%;
   padding: 0;
 }
-h1{
+
+h1 {
   text-align: center;
-  color:rgb(29, 29, 29);
+  color: rgb(29, 29, 29);
   margin-top: 20px;
   font-size: 28px;
 }
-form{
+
+form {
   background: rgb(233, 229, 229);
   width: 400px;
   margin: 20px auto;
-  padding:25px 30px;
+  padding: 25px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 1);
 }
-form label{
+
+form label {
   display: block;
   font-weight: 600;
   margin-bottom: 5px;
   color: #555;
 }
-form input[type="text"],form input[type="number"]{
+
+form input[type="text"],
+form input[type="number"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -76,58 +84,69 @@ form input[type="text"],form input[type="number"]{
   font-size: 14px;
   transition: border 0.3s;
 }
-form input[type="text"]:focus,form input[type="number"]:focus{
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
   border-color: #4a90e2;
   outline: none;
 }
-form input[type="button"]{
+
+form input[type="button"] {
   background: #4a90e2;
   color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 6px;
-  cursor:pointer;
+  cursor: pointer;
   font-size: 14px;
   transition: background 0.3s;
   margin-top: 5px;
 }
-form input[type="button"]:disabled{
+
+form input[type="button"]:disabled {
   background: #bbb;
   cursor: not-allowed;
 }
-form input[type="button"]:hover:not(:disabled){
+
+form input[type="button"]:hover:not(:disabled) {
   background: #357abd;
 }
-table{
-border-collapse: collapse;
- margin: 30px auto;
-  width: 80%; 
+
+table {
+  border-collapse: collapse;
+  margin: 30px auto;
+  width: 80%;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0,1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 1);
 }
-table th{
+
+table th {
   background: #4a90e2;
   color: #ffffff;
   padding: 12px;
   font-size: 15px;
   text-align: left;
 }
-table td{
+
+table td {
   padding: 12px;
   border-bottom: 1px solid #eee;
 }
-table tr:nth-child(even){
+
+table tr:nth-child(even) {
   background: #f9f9f9;
 }
-table tr:hover{
+
+table tr:hover {
   background: #eef5fc;
 }
-table button{
+
+table button {
   background: #ff6b6b;
   color: #fff;
-  border:none;
+  border: none;
   padding: 6px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -135,13 +154,15 @@ table button{
   transition: background 0.3s;
 }
 
-table button:hover{
+table button:hover {
   background: #e25050;
 }
-table button:first-of-type{
+
+table button:first-of-type {
   background: #4caf50;
   margin-right: 5px;
 }
-table button:first-of-type:hover{
+
+table button:first-of-type:hover {
   background: #3e8e41;
 }
