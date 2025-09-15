@@ -11,7 +11,7 @@ function App() {
     <>
       <div>
         <SES />
-     </div>
+      </div>
     </>
   )
 }
