@@ -1,24 +1,24 @@
 import { Component } from "react";
 
 
-export default class LifeCycleHooksOne extends Component{
-    constructor(){
+export default class LifeCycleHooksOne extends Component {
+    constructor() {
         super();
         console.log("Welcome to Constructor");
-        this.state={
-            message:"",
+        this.state = {
+            message: "",
         };
     }
-     componentDidMount(){
+    componentDidMount() {
         console.log("I am from componentDidMount");
     }
-    
-    render(){
+
+    render() {
         console.log("I am from render Method");
-        return<div>LifeCycleHooksOne</div>;
+        return <div>LifeCycleHooksOne</div>;
     }
-    static getDerivedStateFromProps(){
+    static getDerivedStateFromProps() {
         console.log("Iam from getDerivedStateFromProps");
     }
-   
+
 }
