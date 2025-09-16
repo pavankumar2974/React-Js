@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ProductAdminPanel from './Components/ProductAdminPanel'
+import LifeCycleHooksOne from './Components/LifeCycleHooksOne'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <ProductAdminPanel />
+     <LifeCycleHooksOne/>   
       </div>
     </>
   )
