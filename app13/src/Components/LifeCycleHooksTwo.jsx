@@ -16,7 +16,7 @@ export default class LifeCycleHooksTwo extends Component {
     render() {
         console.log("I am from render Method");
         return <div>LifeCycleHooksTwo
-           
+
         </div>;
     }
     static getDerivedStateFromProps() {
