@@ -17,8 +17,7 @@ function App() {
        {/* <LifeCycleHooksOne /> */}
         {/* <LifeCycleHooksTwo/> */}
         {/* <LifeCycleHooksDemo /> */}
-        <DemoHooks/>
-      </div>
+        <DemoHooks age={6} />      </div>
     </>
   )
 }
