@@ -5,6 +5,7 @@ import './App.css'
 import LifeCycleHooksOne from './Components/LifeCycleHooksOne'
 import LifeCycleHooksTwo from './Components/LifeCycleHooksTwo'
 import LifeCycleHooksDemo from './Component/lifecyclehooksdemo'
+import DemoHooks from './Component/DemoHooks'
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <div>
        {/* <LifeCycleHooksOne /> */}
         {/* <LifeCycleHooksTwo/> */}
-        <LifeCycleHooksDemo />
+        {/* <LifeCycleHooksDemo /> */}
+        <DemoHooks/>
       </div>
     </>
   )
