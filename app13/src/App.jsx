@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LifeCycleHooksOne from './Components/LifeCycleHooksOne'
 import LifeCycleHooksTwo from './Components/LifeCycleHooksTwo'
+import LifeCycleHooksDemo from './Component/lifecyclehooksdemo'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <>
       <div>
        {/* <LifeCycleHooksOne /> */}
-        <LifeCycleHooksTwo/>
+        {/* <LifeCycleHooksTwo/> */}
+        <LifeCycleHooksDemo />
       </div>
     </>
   )
