@@ -15,9 +15,9 @@ function App() {
     <>
       <div>
        {/* <LifeCycleHooksOne /> */}
-        {/* <LifeCycleHooksTwo/> */}
+        <LifeCycleHooksTwo/>
         {/* <LifeCycleHooksDemo /> */}
-        <DemoHooks age={6} />      </div>
+          <DemoHooks age={61} />      </div>  
     </>
   )
 }
