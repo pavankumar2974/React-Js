@@ -3,43 +3,43 @@ import User from "./User";
 
 
 
-export default class Child extends Component{
-    constructor(){
+export default class Child extends Component {
+    constructor() {
         super();
-        this.state={
-            message:"Hello",
+        this.state = {
+            message: "Hello",
         };
     }
-    static getDerviedStateFromProps(Props,state){
+    static getDerviedStateFromProps(Props, state) {
         console.log("getDerivedStateFromsProps triggred");
-        if(Props.count<50){
-            return{message:"value is less than 50"};
-        }else{
-            return{
-                message:"value is Greater than 50"
+        if (Props.count < 50) {
+            return { message: "value is less than 50" };
+        } else {
+            return {
+                message: "value is Greater than 50"
             };
         }
     }
-    shouldComponentUpdate(){
+    shouldComponentUpdate() {
         console.log("ShouldComponentUpdate Triggered");
         return true;
     }
 
-    render(){
+    render() {
         console.log("Render Method Triggered");
-        return(
+        return (
             <div>
                 <h2>{this.props.count}</h2>
                 <h2>{this.state.message}</h2>
-                {this.props.count<=50 &&  <User />}
+                {this.props.count <= 50 && <User />}
             </div>
         )
     }
-    getSnapshotBeforeUpdate(){
+    getSnapshotBeforeUpdate() {
         console.log("getSnapShotBeforeUpdate Triggered");
         return null;
     }
-    componentDidUpdate(preProps, PreState){
+    componentDidUpdate(preProps, PreState) {
         console.log(preProps, PreState);
         console.log("ComponentDidUpdate")
     }
