@@ -1,4 +1,5 @@
 import { Component } from "react";
+import ChildOne from "./ChildOne";
 
 
 
@@ -17,6 +18,7 @@ export default class Demo extends Component{
         return(
             <div>
                 <button onClick={this.incrementCount}>Increment</button>
+                <ChildOne count={this.state.count}/>
             </div>
         )
     }
