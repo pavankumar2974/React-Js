@@ -1,27 +1,25 @@
 import { Component } from "react";
 import User from "./User";
 
-
-
 export default class Child extends Component {
     constructor() {
         super();
         this.state = {
-            message: "Hello",
+            message: "",
         };
     }
-    static getDerviedStateFromProps(Props, state) {
-        console.log("getDerivedStateFromsProps triggred");
-        if (Props.count < 50) {
-            return { message: "value is less than 50" };
+
+    static getDerivedStateFromProps(props, state) {
+        console.log("getDerivedStateFromProps Triggered");
+        if (props.count < 50) {
+            return { message: "Value is less than 50" };
         } else {
-            return {
-                message: "value is Greater than 50"
-            };
+            return { message: "Value is greater than 50" };
         }
     }
+
     shouldComponentUpdate() {
-        console.log("ShouldComponentUpdate Triggered");
+        console.log("shouldComponentUpdate Triggered");
         return true;
     }
 
@@ -33,14 +31,17 @@ export default class Child extends Component {
                 <h2>{this.state.message}</h2>
                 {this.props.count <= 50 && <User />}
             </div>
-        )
+        );
     }
+
     getSnapshotBeforeUpdate() {
-        console.log("getSnapShotBeforeUpdate Triggered");
+        console.log("getSnapshotBeforeUpdate Triggered");
         return null;
     }
-    componentDidUpdate(preProps, PreState) {
-        console.log(preProps, PreState);
-        console.log("ComponentDidUpdate")
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log("Previous Props:", prevProps);
+        console.log("Previous State:", prevState);
+        console.log("componentDidUpdate Triggered");
     }
 }
