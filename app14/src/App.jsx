@@ -5,6 +5,8 @@ import './App.css'
 import LifeCycleDemo from './Components/LifeCycleDemo'
 import Demo from './Component/Demo'
 import RefsDemo from './Refs/RefsDemo'
+import ClickCounter from './HocComponent/ClickCounter'
+import HoverCounter from './HocComponent/HoverCounter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +16,10 @@ function App() {
       <div>
         {/* <LifeCycleDemo /> */}
         {/* <Demo /> */}
-        <RefsDemo />
+        {/* <RefsDemo /> */}
+        <ClickCounter/>
+        <hr/>
+        <HoverCounter/>
       </div>
     </>
   )
