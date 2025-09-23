@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LifeCycleDemo from './Components/LifeCycleDemo'
 import Demo from './Component/Demo'
+import RefsDemo from './Refs/RefsDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,8 +12,9 @@ function App() {
   return (
     <>
       <div>
-        <LifeCycleDemo />
+        {/* <LifeCycleDemo /> */}
         {/* <Demo /> */}
+        <RefsDemo />
       </div>
     </>
   )
