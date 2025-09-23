@@ -1,5 +1,27 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+// export default class RefsDemo extends Component{
+//     constructor(){
+//         super();
+//         this.inputRef=React.createRef();
+//     }
+//     render(){
+//         return(
+//             <div>
+//                 <h2>{"Welcome to React Ref demo"}</h2>
+//                 <input type="text" ref={this.inputRef}/>
+//             </div>
+//         );
+//     }
+//     componentDidMount(){
+//         this.inputRef.current.focus();
+//         this.inputRef.current.value="Hello";
+//         this.inputRef.current.style.background="Black";
+//         this.inputRef.current.style.color="White";
+//         this.inputRef.current.style.fontSize="25px";
+//     }
+// }
 
+import React, { Component } from "react";
 
 export default class RefsDemo extends Component{
     constructor(){
@@ -9,7 +31,7 @@ export default class RefsDemo extends Component{
     render(){
         return(
             <div>
-                <h2>{"Welcome to React Ref demo"}</h2>
+                <h2>{"Welcome to React Ref Demo"}</h2>
                 <input type="text" ref={this.inputRef}/>
             </div>
         );
@@ -17,9 +39,7 @@ export default class RefsDemo extends Component{
     componentDidMount(){
         this.inputRef.current.focus();
         this.inputRef.current.value="Hello";
-        this.inputRef.current.style.background="Black";
-        this.inputRef.current.style.color="White";
-        this.inputRef.current.style.fontSize="25px";
-        
+       this.inputRef.current.style.background="darkblue";
+       this.inputRef.current.style.color="White";
     }
 }
