@@ -17,9 +17,9 @@ function App() {
         {/* <LifeCycleDemo /> */}
         {/* <Demo /> */}
         {/* <RefsDemo /> */}
-        <ClickCounter/>
-        <hr/>
-        <HoverCounter/>
+        <ClickCounter />
+        <hr />
+        <HoverCounter />
       </div>
     </>
   )
