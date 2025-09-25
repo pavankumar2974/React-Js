@@ -1,5 +1,5 @@
 import { Component } from "react";
-import UserOne from "./UserOne"; 
+import UserOne from "./UserOne";
 
 export default class ChildOne extends Component {
   constructor() {
@@ -29,7 +29,7 @@ export default class ChildOne extends Component {
       <div>
         <h2>{this.props.count}</h2>
         <h2>{this.state.message}</h2>
-        {this.props.count <= 50 && <UserOne />} 
+        {this.props.count <= 50 && <UserOne />}
       </div>
     );
   }
