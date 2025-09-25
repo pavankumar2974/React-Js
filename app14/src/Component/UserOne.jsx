@@ -1,7 +1,7 @@
 import { Component } from "react";
 
-export default class UserOne extends Component{
-     render() {
+export default class UserOne extends Component {
+  render() {
     return (
       <div>
         <img
