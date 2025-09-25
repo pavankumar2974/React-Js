@@ -3,22 +3,22 @@ import ChildOne from "./ChildOne";
 
 
 
-export default class Demo extends Component{
-    constructor(){
+export default class Demo extends Component {
+    constructor() {
         super();
-        this.state={
-            count:10,
+        this.state = {
+            count: 10,
         };
     }
-    incrementCount=()=>{
-        this.setState({count:this.state.count+10});
+    incrementCount = () => {
+        this.setState({ count: this.state.count + 10 });
     };
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <button onClick={this.incrementCount}>Increment</button>
-                <ChildOne count={this.state.count}/>
+                <ChildOne count={this.state.count} />
             </div>
         )
     }
