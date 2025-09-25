@@ -11,17 +11,17 @@ export default class LifeCycleDemo extends Component {
         };
     }
 
-    incrementCount = () => { 
+    incrementCount = () => {
         this.setState({ count: this.state.count + 10 });
     };
-    decrementCount=()=>{
-        this.setState({count:this.state.count - 10 });
+    decrementCount = () => {
+        this.setState({ count: this.state.count - 10 });
     };
-    multipleCount=()=>{
-        this.setState({count:this.state.count*2});
+    multipleCount = () => {
+        this.setState({ count: this.state.count * 2 });
     };
-    divide=()=>{
-        this.setState({count:this.state.count/2});
+    divide = () => {
+        this.setState({ count: this.state.count / 2 });
     };
     render() {
         return (
