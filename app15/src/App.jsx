@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <div>
-        <ClickCounter/>
-        <br/>
-        <hr/>
-        <HoverCounter/>
+        <ClickCounter />
+        <br />
+        <hr />
+        <HoverCounter />
       </div>
     </>
   )
