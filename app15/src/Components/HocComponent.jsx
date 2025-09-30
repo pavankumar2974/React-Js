@@ -1,7 +1,5 @@
 import { Component } from "react";
 
-
-
 function HocComponent(MiddleComp){
     return class extends Component {
     constructor(props) {
