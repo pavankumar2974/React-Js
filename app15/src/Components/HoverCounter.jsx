@@ -1,8 +1,6 @@
 import { Component } from "react";
 import HocComponent from "./HocComponent";
 
-
-
 class HoverCounter extends Component {
     render() {
         console.log(this.props);
