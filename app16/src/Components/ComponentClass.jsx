@@ -7,11 +7,10 @@ export default class ComponentClass extends Component {
     }
     render() {
         this.state = {
-            message: "I am from component class"
-        };
-        this.state = {
-            Pavan: "hi iam from pavan string"
+            message: "I am from component class",
+             Pavan: "hi iam from pavan string"
         }
+        
         return (
             <div>
 
