@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <ComponentClass/>
-        </div>
+        <ComponentClass />
+      </div>
     </>
   )
 }
