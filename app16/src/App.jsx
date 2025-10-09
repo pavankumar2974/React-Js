@@ -14,10 +14,10 @@ function App() {
       <div>
         {/* <ComponentClass /> */}
         {/* <Refs/> */}
-        <ClickCounter/>
-        <br/>
-        <hr/>
-        <HoverCounter/>
+        <ClickCounter />
+        <br />
+        <hr />
+        <HoverCounter />
       </div>
     </>
   )
