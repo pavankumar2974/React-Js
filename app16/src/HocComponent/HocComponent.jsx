@@ -26,11 +26,11 @@ function HocComponent(MiddleComp) {
             return (
                 <div>
                     <MiddleComp
-                        incrementCount={this.incrementCount} 
+                        incrementCount={this.incrementCount}
                         decrementCount={this.decrementCount}
                         resetCount={this.resetCount}
                         {...this.state}
-                        {...this.props}  
+                        {...this.props}
                     />
                 </div>
             );
