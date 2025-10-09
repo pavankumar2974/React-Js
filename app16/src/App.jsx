@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ComponentClass from './Components/ComponentClass'
 import Refs from './Components/Refs'
+import ClickCounter from './HocComponent/ClickCounter'
+import HoverCounter from './HocComponent/HoverCounter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,11 @@ function App() {
     <>
       <div>
         {/* <ComponentClass /> */}
-        <Refs/>
+        {/* <Refs/> */}
+        <ClickCounter/>
+        <br/>
+        <hr/>
+        <HoverCounter/>
       </div>
     </>
   )
