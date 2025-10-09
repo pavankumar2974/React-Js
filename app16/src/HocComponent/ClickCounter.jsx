@@ -3,12 +3,12 @@ import HocComponent from "./HocComponent";
 
 
 
-class ClickCounter extends Component{
-    render(){
+class ClickCounter extends Component {
+    render() {
         console.log(this.props);
         console.log("FromClickcounter");
-        const{count,incrementCount,decrementCount,resetCount}=this.props;
-        return(
+        const { count, incrementCount, decrementCount, resetCount } = this.props;
+        return (
             <div>
                 <button onClick={incrementCount}>Increment</button>
                 <button onClick={decrementCount}>Decrement</button>
