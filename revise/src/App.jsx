@@ -14,7 +14,6 @@ function App() {
         <h1>React Hoc-Input Length Tracker</h1>
         <NameInput />
         <CommentInput />
-
       </div>
     </>
   );
