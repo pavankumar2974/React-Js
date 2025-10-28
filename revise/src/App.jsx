@@ -7,6 +7,9 @@ import CommentInput from './Components/Hoc/CommentInput'
 import Refs from './Components/Refs/Refs'
 import ClickCounter from './Components/HOC1/ClickCounter'
 import HoverCounter from './Components/HOC1/HoverCounter'
+import ChildComp from './Components/LifeCycleHooks/ChildComp'
+import LifeCycleHooks from './Components/LifeCycleHooks/LifeCycleHooks'
+import UserComp from './Components/LifeCycleHooks/UserComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +21,13 @@ function App() {
         {/* <NameInput />
         <CommentInput /> */}
         {/* <Refs/> */}
-        <ClickCounter/>
+        {/* <ClickCounter/>
         <br/>
         <hr/>
-        <HoverCounter/>
+        <HoverCounter/> */}
+        <ChildComp/>
+        <LifeCycleHooks/>
+        <UserComp/>
       </div>
     </>
   );
