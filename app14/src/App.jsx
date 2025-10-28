@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       <div>
-        {/* <LifeCycleDemo /> */}
-        {/* <Demo /> */}
-        {/* <RefsDemo /> */}
-        <ClickCounter />
+        <LifeCycleDemo /> 
+         <Demo /> 
+         <RefsDemo />
+        {/* <ClickCounter />
         <hr />
-        <HoverCounter />
+        <HoverCounter /> */}
       </div>
     </>
   )
