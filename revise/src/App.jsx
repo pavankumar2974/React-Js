@@ -10,6 +10,9 @@ import HoverCounter from './Components/HOC1/HoverCounter'
 import ChildComp from './Components/LifeCycleHooks/ChildComp'
 import LifeCycleHooks from './Components/LifeCycleHooks/LifeCycleHooks'
 import UserComp from './Components/LifeCycleHooks/UserComp'
+import RefsDemo from './Components/Refs/RefsDemo'
+import HoverCount from './Components/Hoc2/HoverCount'
+import ClickCount from './Components/Hoc2/ClickCount'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,9 +28,15 @@ function App() {
         <br/>
         <hr/>
         <HoverCounter/> */}
-        <ChildComp/>
+        {/* <ChildComp/>
         <LifeCycleHooks/>
-        <UserComp/>
+        <UserComp/> */}
+        {/* <RefsDemo/> */}
+        <ClickCount/>
+        <br/>
+        <hr/>
+        <HoverCount/>
+
       </div>
     </>
   );
