@@ -7,8 +7,7 @@ import ShowMessage from "./Components/ShowMessage";
 function App() {
   return (
     <>
-      {/* Using Render Props with ClickCounter */}
-      <HandleCounter
+        <HandleCounter
         render={(count, incrementCount, decrementCount, resetCount) => (
           <ClickCounter
             count={count}
@@ -18,8 +17,6 @@ function App() {
           />
         )}
       />
-
-      {/* Using Render Props with HoverCounter */}
       <HandleCounter
         render={(count, incrementCount, decrementCount, resetCount) => (
           <HoverCounter
