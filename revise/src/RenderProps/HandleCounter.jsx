@@ -26,7 +26,7 @@ export default class HandleCounter extends Component {
         {this.props.sayHello()} */}
 
         {this.props.render(
-          this.state.count,
+          this.state.count,~
           this.incrementCount,
           this.decrementCount,
           this.resetCount
