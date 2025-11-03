@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <div>
-        <StudentEnrollmentSystem  />
-       </div>
+        <StudentEnrollmentSystem />
+      </div>
     </>
   )
 }
