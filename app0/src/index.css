@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +47,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,88 +62,90 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
 
- form {
-      background-color: #6b656518;
-    }
+form {
+  background-color: #6b656518;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: auto;
-      padding: 20px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 20px;
+}
 
-    .container {
-      display: flex;
-      gap: 20px;
-    }
+.container {
+  display: flex;
+  gap: 20px;
+}
 
-    .column {
-      flex: 1;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
-    }
+.column {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+}
 
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
 
-    input,
-    select {
-      width: 95%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+input,
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    button {
-      background-color: #28a745;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
-    }
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
 
-    button:disabled {
-      background-color: gray;
-      cursor: not-allowed;
-    }
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
 
-    th,
-    td {
-      border: 1px solid #6b6565;
-      padding: 8px;
-      text-align: left;
-    }
+th,
+td {
+  border: 1px solid #6b6565;
+  padding: 8px;
+  text-align: left;
+}
 
-    th {
-      background-color: #726d6d18;
-    }
+th {
+  background-color: #726d6d18;
+}
 
-    h3 {
-      background-color: aquamarine;
-    }
+h3 {
+  background-color: aquamarine;
+}
 
-    .container {
-      background-color: rgb(211, 241, 248);
-    }
+.container {
+  background-color: rgb(211, 241, 248);
+}
