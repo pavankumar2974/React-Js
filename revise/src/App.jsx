@@ -1,13 +1,17 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 import "./App.css";
-import ClickCounter from "./Components/ClickCounter";
-import HoverCounter from "./Components/HoverCounter";
-import HandleCounter from "./Components/HandleCounter";
-import ShowMessage from "./Components/ShowMessage";
+import HandleCounter from "./RenderProps/HandleCounter";
+import ClickCounter from "./RenderProps/ClickCounter";
+import HoverCounter from "./RenderProps/HoverCounter";
+import ShowMessage from "./RenderProps/ShowMessage";
+
 
 function App() {
   return (
     <>
-        <HandleCounter
+     <HandleCounter
         render={(count, incrementCount, decrementCount, resetCount) => (
           <ClickCounter
             count={count}
@@ -15,22 +19,29 @@ function App() {
             decrementCount={decrementCount}
             resetCount={resetCount}
           />
-        )}
-      />
-      <HandleCounter
-        render={(count, incrementCount, decrementCount, resetCount) => (
-          <HoverCounter
-            count={count}
-            incrementCount={incrementCount}
-            decrementCount={decrementCount}
-            resetCount={resetCount}
-          />
-        )}
-      />
+  )}
+/>
 
-      {/* Optional example of ShowMessage usage */}
-      <ShowMessage msg="Render Props Example Working Successfully!" />
-    </>
+        <hr/>
+        <br/>
+<HandleCounter 
+render={(count,incrementCount,decrementCount,resetCount)=>(
+  <HoverCounter
+  count={count}
+  incrementCount={incrementCount}
+  decrementCount={decrementCount}
+  resetCount={resetCount}/>)}/>
+
+      <br/>
+      <hr/>
+      <HandleCounter hello={"hello from HandleCounter"}
+      sayHello={
+        ()=>{
+          return <ShowMessage msg="hello from function"/>}}/>
+        
+ </>
+              
+    
   );
 }
 
