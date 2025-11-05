@@ -11,7 +11,7 @@ import ShowMessage from "./RenderProps/ShowMessage";
 function App() {
   return (
     <>
-     <HandleCounter
+      <HandleCounter
         render={(count, incrementCount, decrementCount, resetCount) => (
           <ClickCounter
             count={count}
@@ -19,29 +19,30 @@ function App() {
             decrementCount={decrementCount}
             resetCount={resetCount}
           />
-  )}
-/>
+        )}
+      />
 
-        <hr/>
-        <br/>
-<HandleCounter 
-render={(count,incrementCount,decrementCount,resetCount)=>(
-  <HoverCounter
-  count={count}
-  incrementCount={incrementCount}
-  decrementCount={decrementCount}
-  resetCount={resetCount}/>)}/>
+      <hr />
+      <br />
+      <HandleCounter
+        render={(count, incrementCount, decrementCount, resetCount) => (
+          <HoverCounter
+            count={count}
+            incrementCount={incrementCount}
+            decrementCount={decrementCount}
+            resetCount={resetCount} />)} />
 
-      <br/>
-      <hr/>
+      <br />
+      <hr />
       <HandleCounter hello={"hello from HandleCounter"}
-      sayHello={
-        ()=>{
-          return <ShowMessage msg="hello from function"/>}}/>
-        
- </>
-              
-    
+        sayHello={
+          () => {
+            return <ShowMessage msg="hello from function" />
+          }} />
+
+    </>
+
+
   );
 }
 
