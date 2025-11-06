@@ -11,6 +11,7 @@ import HoverCounterOne from "./RenderProps1/HoverCounterOne";
 import ClickCounterOne from "./RenderProps1/ClickCounterOne";
 import HandleCount from "./RenderProps2/HandleCount";
 import HoverCount from "./RenderProps2/HoverCount";
+import ClickCountOne from "./RenderProps2/ClickCountOne";
 
 
 function App() {
@@ -45,9 +46,9 @@ function App() {
             return <ShowMessage msg="hello from function" />
           }} /> */}
  
-   {/* <HandleCounterOne
+   <HandleCount
         render={(count, incrementCount, decrementCount, resetCount) => (
-          <HoverCounterOne
+          <ClickCountOne
             count={count}
             incrementCount={incrementCount}
             decrementCount={decrementCount}
@@ -56,7 +57,7 @@ function App() {
         )}
       />
       <br/>
-      <hr/> */}
+      <hr/>
         <HandleCount
         render={(count, incrementCount, decrementCount, resetCount) => (
           <HoverCount
