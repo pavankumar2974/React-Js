@@ -1,24 +1,24 @@
 import { Component } from "react";
 
 
-export default class HandleCount extends Component{
-    constructor(props){
+export default class HandleCount extends Component {
+    constructor(props) {
         super(props);
-        this.state={
-            count:0,
+        this.state = {
+            count: 0,
         };
     }
-    incrementCount=()=>{
-        this.setState({count:this.state.count+1})
+    incrementCount = () => {
+        this.setState({ count: this.state.count + 1 })
     };
-    decrementCount=()=>{
-        this.setState({count:this.state.count-1})
+    decrementCount = () => {
+        this.setState({ count: this.state.count - 1 })
     };
-    resetCount=()=>{
-        this.setState({count:0});
+    resetCount = () => {
+        this.setState({ count: 0 });
     };
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 {this.props.render(
                     this.state.count,
