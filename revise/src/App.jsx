@@ -9,6 +9,8 @@ import ShowMessage from "./RenderProps/ShowMessage";
 import HandleCounterOne from "./RenderProps1/HandleCounterOne";
 import HoverCounterOne from "./RenderProps1/HoverCounterOne";
 import ClickCounterOne from "./RenderProps1/ClickCounterOne";
+import HandleCount from "./RenderProps2/HandleCount";
+import HoverCount from "./RenderProps2/HoverCount";
 
 
 function App() {
@@ -42,8 +44,8 @@ function App() {
           () => {
             return <ShowMessage msg="hello from function" />
           }} /> */}
-
-  <HandleCounterOne
+ 
+   {/* <HandleCounterOne
         render={(count, incrementCount, decrementCount, resetCount) => (
           <HoverCounterOne
             count={count}
@@ -54,17 +56,19 @@ function App() {
         )}
       />
       <br/>
-      <hr/>
-        <HandleCounterOne
+      <hr/> */}
+        <HandleCount
         render={(count, incrementCount, decrementCount, resetCount) => (
-          <ClickCounterOne
+          <HoverCount
             count={count}
             incrementCount={incrementCount}
             decrementCount={decrementCount}
             resetCount={resetCount}
           />
         )}
-      />
+      /> 
+
+     
       
     </>
 
