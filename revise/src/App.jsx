@@ -46,7 +46,7 @@ function App() {
           () => {
             return <ShowMessage msg="hello from function" />
           }} /> */}
-{/* 
+
       <HandleCount
         render={(count, incrementCount, decrementCount, resetCount) => (
           <ClickCountOne
@@ -68,13 +68,13 @@ function App() {
             resetCount={resetCount}
           />
         )}
-      /> */}
+      />
 
 
-<ClickCount/>
+{/* <ClickCount/>
 <hr/>
 <br/>
-<HoverCount/>
+<HoverCount/> */}
     </>
 
 
