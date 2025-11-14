@@ -3,12 +3,13 @@ import { Component } from "react";
 
 export default class HoverCounter extends Component{
     render(){
+        const{count,increse,decrese,reset}=this.props
         return(
             <div>
-                <button onMouseOver={incrementCount}>Increment</button>
-                <button onMouseOver={decrementCount}>Decrement</button>
-                <button onMouseOver={resetCount}>Reset</button>
-                <p>count:</p>
+                <button onMouseOver={increse}>Increment</button>
+                <button onMouseOver={decrese}>Decrement</button>
+                <button onMouseOver={reset}>Reset</button>
+                <p>count:{count}</p>
             </div>
         )
     }
