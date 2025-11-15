@@ -18,28 +18,28 @@ function App() {
         <br/>
         <hr/>
         <HoverCount/> */}
-<hr/>
+        <hr />
 
-<HandleCounter
-render={(count,increse,decrese,reset)=>(
-  <ClickCounterTwo
-  count={count}
-  increse={increse}
-  decrese={decrese}
-  reset={reset}/>
-)}/>
-<hr/>
-<br/>
-<HandleCounter
-render={(count,increse,decrese,reset)=>(
-<HoverCounter
-count={count}
-increse={increse}
-decrese={decrese}
-reset={reset}/>
-)}
-  
-/>
+        <HandleCounter
+          render={(count, increse, decrese, reset) => (
+            <ClickCounterTwo
+              count={count}
+              increse={increse}
+              decrese={decrese}
+              reset={reset} />
+          )} />
+        <hr />
+        <br />
+        <HandleCounter
+          render={(count, increse, decrese, reset) => (
+            <HoverCounter
+              count={count}
+              increse={increse}
+              decrese={decrese}
+              reset={reset} />
+          )}
+
+        />
 
       </div>
     </>
