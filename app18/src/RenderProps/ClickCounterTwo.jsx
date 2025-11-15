@@ -1,9 +1,9 @@
 import { Component } from "react";
 
 
-export default class ClickCounterTwo extends Component{
-    render(){
-        const{count,increse,decrese,reset}=this.props;
+export default class ClickCounterTwo extends Component {
+    render() {
+        const { count, increse, decrese, reset } = this.props;
         return (
             <div>
                 <button onClick={increse}>Increment</button>
